@@ -7,14 +7,17 @@
     android:layout_height="41dp"
     android:layout_gravity="center"
     android:layout_marginHorizontal="8dp"
-    card_view:cardCornerRadius="20dp">
+    card_view:cardBackgroundColor="@color/light_gray"
+    card_view:cardElevation="0dp"
+    card_view:cardPreventCornerOverlap="false"
+    card_view:cardCornerRadius="20dp"
+    >
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingVertical="12dp"
         android:paddingHorizontal="16dp"
-        android:background="@drawable/category_button"
         >
 
         <TextView
