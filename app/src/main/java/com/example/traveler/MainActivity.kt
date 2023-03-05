@@ -8,24 +8,34 @@ import androidx.recyclerview.widget.RecyclerView
 class MainActivity : AppCompatActivity() {
 
     private lateinit var rvCategory: RecyclerView
+    private lateinit var rvPlace: RecyclerView
+
     private var listCategory = ArrayList<Category>()
+    private var listPlace = ArrayList<Place>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         rvCategory = findViewById(R.id.rv_categories)
+        rvPlace = findViewById(R.id.rv_places)
         rvCategory.setHasFixedSize(true)
+        rvPlace.setHasFixedSize(true)
 
         listCategory.addAll(getListCategory())
+        listPlace.addAll(getListPlace())
         showRecyclerList()
 
     }
 
+
     private fun showRecyclerList() {
         rvCategory.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        rvPlace.layoutManager = LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL, false)
         val listCategoryAdapter = ListCategoryAdapter(listCategory)
+        val listPlaceAdapter = ListPlaceAdapter(listPlace)
         rvCategory.adapter = listCategoryAdapter
+        rvPlace.adapter = listPlaceAdapter
     }
 
     private fun getListCategory(): ArrayList<Category> {
@@ -37,5 +47,16 @@ class MainActivity : AppCompatActivity() {
             list.add(category)
         }
         return list
+    }
+
+    private fun getListPlace(): ArrayList<Place> {
+        val placePhoto = resources.getStringArray(R.array.place_photo)
+        val lists = ArrayList<Place>()
+
+        for (i in placePhoto.indices) {
+            val place = Place(placePhoto[i])
+            lists.add(place)
+        }
+        return lists
     }
 }

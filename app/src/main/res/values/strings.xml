@@ -3,6 +3,8 @@
     <string name="header_title">Where do you\nwant to discover?</string>
     <string name="search">Search</string>
     <string name="category">Category</string>
+    <string name="popular">Popular</string>
+    <string name="alt">Place Image</string>
 
     <string-array name="category_name">
         <item>Mountain</item>
@@ -10,5 +12,29 @@
         <item>Beach</item>
         <item>Sea</item>
         <item>Camp</item>
+    </string-array>
+
+    <string-array name="place_name">
+        <item>Tokyo Tower</item>
+        <item>Machu Pichu</item>
+        <item>Rialto Bridge</item>
+        <item>Kelingking Beach</item>
+        <item>Yosemite Valley</item>
+    </string-array>
+
+    <string-array name="place_location">
+        <item>Tokyo</item>
+        <item>Urubamba</item>
+        <item>Venice</item>
+        <item>Nusa Penida</item>
+        <item>California</item>
+    </string-array>
+
+    <string-array name="place_photo">
+        <item>https://images.unsplash.com/photo-1536098561742-ca998e48cbcc</item>
+        <item>https://images.unsplash.com/photo-1526392060635-9d6019884377</item>
+        <item>https://images.unsplash.com/photo-1523906834658-6e24ef2386f9</item>
+        <item>https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8</item>
+        <item>https://images.unsplash.com/flagged/photo-1575556809963-3d9e5730eda0</item>
     </string-array>
 </resources>
