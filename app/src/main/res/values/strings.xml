@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Traveler</string>
+    <string name="header_title">Where do you\nwant to discover?</string>
+    <string name="search">Search</string>
+    <string name="category">Category</string>
+
+    <string-array name="category_name">
+        <item>Mountain</item>
+        <item>Forest</item>
+        <item>Beach</item>
+        <item>Sea</item>
+        <item>Camp</item>
+    </string-array>
 </resources>
