@@ -4,13 +4,20 @@
     <string name="search">Search</string>
     <string name="category">Category</string>
     <string name="popular">Popular</string>
-    <string name="alt">Place Image</string>
+    <string name="alt">Image</string>
     <string name="rating">rating</string>
     <string name="place">place</string>
     <string name="location">location</string>
     <string name="place_image">Place Image</string>
     <string name="back_button">Back Button</string>
     <string name="share_button">Share Button</string>
+    <string name="place_name">Place Name</string>
+    <string name="review">Review</string>
+    <string name="description">The Rialto Bridge is the oldest of the four bridges spanning the Grand Canal in Venice, Italy. Connecting the sestieri (districts) of San Marco and San Polo, it has been rebuilt several times since its first construction as a pontoon bridge in 1173, and is now a significant tourist attraction in the city.</string>
+    <string name="maps">Location</string>
+    <string name="book_button">Booking button</string>
+    <string name="book">Book now</string>
+    <string name="price">price</string>
 
     <string-array name="category_name">
         <item>Mountain</item>
@@ -59,13 +66,9 @@
         <item>4.7</item>
     </string-array>
 
-    <!--    <string-array name="place_photo">-->
-    <!--        <item>https://images.unsplash.com/photo-1536098561742-ca998e48cbcc</item>-->
-    <!--        <item>https://images.unsplash.com/photo-1526392060635-9d6019884377</item>-->
-    <!--        <item>https://images.unsplash.com/photo-1523906834658-6e24ef2386f9</item>-->
-    <!--        <item>https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8</item>-->
-    <!--        <item>https://images.unsplash.com/flagged/photo-1575556809963-3d9e5730eda0</item>-->
-    <!--    </string-array>-->
+  <string-array name="place_description">
+      <item>The Rialto Bridge is the oldest of the four bridges spanning the Grand Canal in Venice, Italy. Connecting the sestieri (districts) of San Marco and San Polo, it has been rebuilt several times since its first construction as a pontoon bridge in 1173, and is now a significant tourist attraction in the city.</item>
+  </string-array>
 
     <integer-array name="place_photo">
         <item>@drawable/tokyo</item>
