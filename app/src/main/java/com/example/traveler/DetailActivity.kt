@@ -4,11 +4,12 @@ import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.example.traveler.databinding.ActivityDetailBinding
 
 class DetailActivity : AppCompatActivity() {
 
-    companion object{
+    companion object {
         const val EXTRA_PLACE = "extra_place"
     }
 
@@ -44,10 +45,18 @@ class DetailActivity : AppCompatActivity() {
         binding.btnDetailActionShare.setOnClickListener {
             val shareIntent = Intent().apply {
                 action = Intent.ACTION_SEND
-                putExtra(Intent.EXTRA_TEXT, "Hey, check out this place ${place?.name} in ${place?.location}")
+                putExtra(
+                    Intent.EXTRA_TEXT,
+                    "Hey, check out this place ${place?.name} in ${place?.location}"
+                )
                 type = "text/plain"
             }
             startActivity(shareIntent)
+        }
+
+        binding.btnDetailBook.setOnClickListener {
+            val toast = Toast.makeText(this, "Booking ${place?.name}...", Toast.LENGTH_SHORT)
+            toast.show()
         }
 
     }

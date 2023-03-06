@@ -3,8 +3,11 @@ package com.example.traveler
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.traveler.databinding.ActivityDetailBinding
+import com.example.traveler.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,13 +17,17 @@ class MainActivity : AppCompatActivity() {
     private var listCategory = ArrayList<Category>()
     private var listPlace = ArrayList<Place>()
 
+    private lateinit var binding: ActivityMainBinding
+
     companion object {
         const val EXTRA_PLACE = "extra_place"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+
+        setContentView(binding.root)
 
         rvCategory = findViewById(R.id.rv_categories)
         rvPlace = findViewById(R.id.rv_places)
@@ -30,6 +37,11 @@ class MainActivity : AppCompatActivity() {
         listCategory.addAll(getListCategory())
         listPlace.addAll(getListPlace())
         showRecyclerList()
+
+        binding.civProfile.setOnClickListener {
+            val intent = Intent(this, AboutPage::class.java)
+            startActivity(intent)
+        }
 
     }
 
@@ -44,15 +56,24 @@ class MainActivity : AppCompatActivity() {
 
         listPlaceAdapter.setOnItemClickCallback(object : ListPlaceAdapter.OnItemClickCallback {
             override fun onItemClicked(data: Place) {
-//                send data to detail activity
                 sendData(data)
-
             }
 
             private fun sendData(data: Place) {
                 val intent = Intent(this@MainActivity, DetailActivity::class.java)
                 intent.putExtra(EXTRA_PLACE, data)
                 startActivity(intent)
+            }
+        })
+
+        listCategoryAdapter.setOnItemClickCallback(object :
+            ListCategoryAdapter.OnItemClickCallback {
+            override fun onItemClicked(data: Category) {
+                showSelectedCategory(data)
+            }
+
+            private fun showSelectedCategory(data: Category) {
+                Toast.makeText(this@MainActivity, "You choose " + data.name, Toast.LENGTH_SHORT).show()
             }
         })
     }
