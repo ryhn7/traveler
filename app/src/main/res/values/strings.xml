@@ -13,11 +13,12 @@
     <string name="share_button">Share Button</string>
     <string name="place_name">Place Name</string>
     <string name="review">Review</string>
-    <string name="description">The Rialto Bridge is the oldest of the four bridges spanning the Grand Canal in Venice, Italy. Connecting the sestieri (districts) of San Marco and San Polo, it has been rebuilt several times since its first construction as a pontoon bridge in 1173, and is now a significant tourist attraction in the city.</string>
+    <string name="description">desc</string>
     <string name="maps">Location</string>
     <string name="book_button">Booking button</string>
     <string name="book">Book now</string>
-    <string name="price">price</string>
+    <string name="price">Price</string>
+    <string name="price_value">$100</string>
 
     <string-array name="category_name">
         <item>Mountain</item>
@@ -28,29 +29,29 @@
     </string-array>
 
     <string-array name="place_name">
-        <item>Tokyo Tower,</item>
-        <item>Machu Pichu,</item>
-        <item>Rialto Bridge,</item>
-        <item>Kelingking Beach,</item>
-        <item>Yosemite Park,</item>
-        <item>Akropolis,</item>
-        <item>Antelope Canyon,</item>
-        <item>Bryggen,</item>
-        <item>Louvre,</item>
-        <item>Times Square,</item>
+        <item>Tokyo Tower</item>
+        <item>Machu Pichu</item>
+        <item>Rialto Bridge</item>
+        <item>Kelingking Beach</item>
+        <item>Yosemite Park</item>
+        <item>Acropolis</item>
+        <item>Antelope Canyon</item>
+        <item>Bryggen</item>
+        <item>Louvre</item>
+        <item>Times Square</item>
     </string-array>
 
     <string-array name="place_location">
-        <item>Tokyo</item>
-        <item>Urubamba</item>
-        <item>Venice</item>
-        <item>Bali</item>
-        <item>California</item>
-        <item>Athens</item>
-        <item>Arizona</item>
-        <item>Bergen</item>
-        <item>Paris</item>
-        <item>New York</item>
+        <item>, Tokyo</item>
+        <item>, Urubamba</item>
+        <item>, Venice</item>
+        <item>, Bali</item>
+        <item>, California</item>
+        <item>, Athens</item>
+        <item>, Arizona</item>
+        <item>, Bergen</item>
+        <item>, Paris</item>
+        <item>, New York</item>
     </string-array>
 
     <string-array name="place_rating">
@@ -66,9 +67,31 @@
         <item>4.7</item>
     </string-array>
 
-  <string-array name="place_description">
-      <item>The Rialto Bridge is the oldest of the four bridges spanning the Grand Canal in Venice, Italy. Connecting the sestieri (districts) of San Marco and San Polo, it has been rebuilt several times since its first construction as a pontoon bridge in 1173, and is now a significant tourist attraction in the city.</item>
-  </string-array>
+    <string-array name="place_price">
+        <item>$50</item>
+        <item>$170</item>
+        <item>$50</item>
+        <item>$30</item>
+        <item>$100</item>
+        <item>$45</item>
+        <item>$30</item>
+        <item>$30</item>
+        <item>$50</item>
+        <item>$20</item>
+    </string-array>
+
+    <string-array name="place_description">
+        <item>The Tokyo Tower is a communications and observation tower in the Shiba-koen district of Minato, Tokyo, Japan, built in 1958. At 332.9 meters (1,092 ft), it is the second-tallest structure in Japan. The structure is an Eiffel Tower-inspired lattice tower that is painted white and international orange to comply with air safety regulations.</item>
+        <item>Machu Picchu is a 15th-century Inca citadel located in the Eastern Cordillera of southern Peru on a 2,430-meter (7,970 ft) mountain ridge. Often referred to as the "Lost City of the Incas", it is the most familiar icon of the Inca Empire. It is located in the Machupicchu District within Urubamba Province above the Sacred Valley, which is 80 kilometers (50 mi) northwest of Cusco.</item>
+        <item>The Rialto Bridge is the oldest of the four bridges spanning the Grand Canal in Venice, Italy. Connecting the sestieri (districts) of San Marco and San Polo, it has been rebuilt several times since its first construction as a pontoon bridge in 1173, and is now a significant tourist attraction in the city.</item>
+        <item>Kelingking Beach is a secluded and scenic beach in the village of Bunga Mekar on the southwestern coast of Nusa Penida Island. One of its most popular landmarks is a plant-covered limestone headland, with massive waves crashing against it. </item>
+        <item>Yosemite National Park is an American national park in California, surrounded on the southeast by Sierra National Forest and on the northwest by Stanislaus National Forest. The park is managed by the National Park Service and covers an area of 759,620 acres (1,187 sq mi; 3,074 km2) in four counties – centered in Tuolumne and Mariposa, extending north and east to Mono and south to Madera County. Designated a World Heritage Site in 1984, Yosemite is internationally recognized for its cliffs, waterfalls, clear streams, giant sequoia groves, lakes, mountains, meadows, glaciers, and biological diversity.</item>
+        <item>The Acropolis of Athens is an ancient citadel located on a rocky outcrop above the city of Athens and contains the remains of several ancient buildings of great architectural and historical significance, the most famous being the Parthenon. The word acropolis is from the Greek words ἄκρον (akron, "highest point, extremity") and πόλις (polis, "city"). The term acropolis is generic and there are many other acropoleis in Greece. During ancient times the Acropolis of Athens was known also more properly as Cecropia, after the legendary serpent-man, Cecrops, the supposed first Athenian king.</item>
+        <item>Navajo Upper Antelope Canyon is a slot canyon in the American Southwest, on Navajo land east of Lechee, Arizona. It includes six separate, scenic slot canyon sections on the Navajo Reservation, referred to as Upper Antelope Canyon (or The Crack), Rattle Snake Canyon, Owl Canyon, Mountain Sheep Canyon, Canyon X and Lower Antelope Canyon (or The Corkscrew). It is the primary attraction of Lake Powell Navajo Tribal Park, along with a hiking trail to Rainbow Bridge National Monument.</item>
+        <item>Bryggen (the dock), also known as Tyskebryggen, is a series of Hanseatic heritage commercial buildings lining up the eastern side of the Vågen harbour in the city of Bergen, Norway. Bryggen has been on the UNESCO list for World Cultural Heritage sites since 1979. The city of Bergen was founded around 1070 within the boundaries of Tyskebryggen. Around 1350 a Kontor of the Hanseatic League was established there, and Tyskebryggen became the centre of the Hanseatic commercial activities in Norway. Today, Bryggen houses museums, shops, restaurants and pubs.</item>
+        <item>The Louvre Museum is the world\'s most-visited museum, and a historic landmark in Paris, France. It is the home of some of the best-known works of art, including the Mona Lisa and the Venus de Milo. A central landmark of the city, it is located on the Right Bank of the Seine in the city\'s 1st arrondissement (district or ward). At any given point in time, approximately 38,000 objects from prehistory to the 21st century are being exhibited over an area of 72,735 square meters (782,910 square feet). </item>
+        <item>Times Square is a major commercial intersection, tourist destination, entertainment hub, and neighborhood in Midtown Manhattan, New York City. It is formed by the junction of Broadway, Seventh Avenue, and 42nd Street. Together with adjacent Duffy Square, Times Square is a bowtie-shaped space five blocks long between 42nd and 47th Streets.</item>
+    </string-array>
 
     <integer-array name="place_photo">
         <item>@drawable/tokyo</item>

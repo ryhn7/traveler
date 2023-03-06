@@ -9,6 +9,12 @@ import com.example.traveler.databinding.PlaceItemBinding
 class ListPlaceAdapter(private val listPlace: ArrayList<Place>) :
     RecyclerView.Adapter<ListPlaceAdapter.ListViewHolder>() {
 
+    private lateinit var onItemClickCallback: OnItemClickCallback
+
+    fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
+        this.onItemClickCallback = onItemClickCallback
+    }
+
     class ListViewHolder(var binding: PlaceItemBinding) : RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
@@ -20,11 +26,18 @@ class ListPlaceAdapter(private val listPlace: ArrayList<Place>) :
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
         val(rating, photo, name, location) = listPlace[position]
-//        Glide.with(holder.itemView.context).load(photo).into(holder.binding.ivPlaceImage)
         holder.binding.tvPlaceRating.text = rating
         holder.binding.ivPlaceImage.setImageResource(photo)
         holder.binding.tvPlaceName.text = name
         holder.binding.tvPlaceLocation.text = location
+
+        holder.itemView.setOnClickListener {
+            onItemClickCallback.onItemClicked(listPlace[holder.adapterPosition])
+        }
+    }
+
+    interface OnItemClickCallback {
+        fun onItemClicked(data: Place)
     }
 
 }

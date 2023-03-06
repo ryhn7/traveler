@@ -1,5 +1,6 @@
 package com.example.traveler
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -12,6 +13,10 @@ class MainActivity : AppCompatActivity() {
 
     private var listCategory = ArrayList<Category>()
     private var listPlace = ArrayList<Place>()
+
+    companion object{
+        const val EXTRA_PLACE = "extra_place"
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,6 +41,20 @@ class MainActivity : AppCompatActivity() {
         val listPlaceAdapter = ListPlaceAdapter(listPlace)
         rvCategory.adapter = listCategoryAdapter
         rvPlace.adapter = listPlaceAdapter
+
+        listPlaceAdapter.setOnItemClickCallback(object : ListPlaceAdapter.OnItemClickCallback {
+            override fun onItemClicked(data: Place) {
+//                send data to detail activity
+                sendData(data)
+
+            }
+
+            private fun sendData(data: Place) {
+                val intent = Intent(this@MainActivity, DetailActivity::class.java)
+                intent.putExtra(EXTRA_PLACE, data)
+                startActivity(intent)
+            }
+        })
     }
 
     private fun getListCategory(): ArrayList<Category> {
@@ -54,10 +73,13 @@ class MainActivity : AppCompatActivity() {
         val placePhoto = resources.obtainTypedArray(R.array.place_photo)
         val placeName = resources.getStringArray(R.array.place_name)
         val placeLocation = resources.getStringArray(R.array.place_location)
+        val placePrice = resources.getStringArray(R.array.place_price)
+        val placeDescription = resources.getStringArray(R.array.place_description)
+
         val lists = ArrayList<Place>()
 
         for (i in placeRating.indices) {
-            val place = Place(placeRating[i], placePhoto.getResourceId(i, -1), placeName[i], placeLocation[i])
+            val place = Place(placeRating[i], placePhoto.getResourceId(i, -1), placeName[i], placeLocation[i], placePrice[i], placeDescription[i])
             lists.add(place)
         }
         return lists
