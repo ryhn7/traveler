@@ -50,11 +50,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun getListPlace(): ArrayList<Place> {
-        val placePhoto = resources.getStringArray(R.array.place_photo)
+        val placeName = resources.getStringArray(R.array.place_name)
+        val placePhoto = resources.obtainTypedArray(R.array.place_photo)
         val lists = ArrayList<Place>()
 
-        for (i in placePhoto.indices) {
-            val place = Place(placePhoto[i])
+        for (i in placeName.indices) {
+            val place = Place(placeName[i], placePhoto.getResourceId(i, -1))
             lists.add(place)
         }
         return lists
