@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/iv_detail_place_image"
+        android:layout_width="match_parent"
+        android:layout_height="348dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/detail_img"
+        android:contentDescription="@string/place_image"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:id="@+id/ll_detail_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_detail_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="160dp"
+            android:background="@drawable/detail_button_top"
+            android:contentDescription="@string/back_button"
+            android:drawableStart="@drawable/icon_back"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/btn_detail_share"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="88dp"
+            android:background="@drawable/detail_button_top"
+            android:contentDescription="@string/share_button"
+            android:drawableStart="@drawable/icon_share"
+            android:padding="12dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
