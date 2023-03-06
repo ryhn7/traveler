@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun showRecyclerList() {
         rvCategory.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
-        rvPlace.layoutManager = LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL, false)
+        rvPlace.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
         val listCategoryAdapter = ListCategoryAdapter(listCategory)
         val listPlaceAdapter = ListPlaceAdapter(listPlace)
         rvCategory.adapter = listCategoryAdapter
@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun getListCategory(): ArrayList<Category> {
-    val categoryName = resources.getStringArray(R.array.category_name)
+        val categoryName = resources.getStringArray(R.array.category_name)
         val list = ArrayList<Category>()
 
         for (i in categoryName.indices) {
@@ -50,12 +50,14 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun getListPlace(): ArrayList<Place> {
-        val placeName = resources.getStringArray(R.array.place_name)
+        val placeRating = resources.getStringArray(R.array.place_rating)
         val placePhoto = resources.obtainTypedArray(R.array.place_photo)
+        val placeName = resources.getStringArray(R.array.place_name)
+        val placeLocation = resources.getStringArray(R.array.place_location)
         val lists = ArrayList<Place>()
 
-        for (i in placeName.indices) {
-            val place = Place(placeName[i], placePhoto.getResourceId(i, -1))
+        for (i in placeRating.indices) {
+            val place = Place(placeRating[i], placePhoto.getResourceId(i, -1), placeName[i], placeLocation[i])
             lists.add(place)
         }
         return lists

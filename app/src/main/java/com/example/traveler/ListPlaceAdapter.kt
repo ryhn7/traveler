@@ -19,11 +19,12 @@ class ListPlaceAdapter(private val listPlace: ArrayList<Place>) :
     override fun getItemCount(): Int = listPlace.size
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
-        val(name, photo) = listPlace[position]
+        val(rating, photo, name, location) = listPlace[position]
 //        Glide.with(holder.itemView.context).load(photo).into(holder.binding.ivPlaceImage)
-        holder.binding.tvPlaceName.text = name
+        holder.binding.tvPlaceRating.text = rating
         holder.binding.ivPlaceImage.setImageResource(photo)
-
+        holder.binding.tvPlaceName.text = name
+        holder.binding.tvPlaceLocation.text = location
     }
 
 }

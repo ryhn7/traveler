@@ -8,35 +8,103 @@
     android:layout_gravity="center"
     android:layout_marginHorizontal="8dp"
     card_view:cardBackgroundColor="@color/light_gray"
-    card_view:cardElevation="0dp"
-    card_view:cardPreventCornerOverlap="false"
     card_view:cardCornerRadius="20dp"
-    >
+    card_view:cardElevation="0dp"
+    card_view:cardPreventCornerOverlap="false">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
+        android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/iv_place_image"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:scaleType="fitXY"
-            android:contentDescription="@string/alt" />
+            android:contentDescription="@string/alt"
+            android:scaleType="fitXY" />
 
-        <TextView
-            android:id="@+id/tv_place_name"
-            android:layout_alignParentTop="@+id/iv_place_image"
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="12dp"
+
+        <LinearLayout
+            android:id="@+id/ll_rating"
             android:layout_width="52dp"
             android:layout_height="24dp"
-            android:textSize="12sp"
-            android:fontFamily="@font/sansreg"
-            android:gravity="center"
-            android:text="5"
-            />
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rating_content_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_star"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/baseline_star_24"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_place_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/sanssemi"
+                android:text="@string/rating"
+                android:textSize="12sp">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_location"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/ll_rating"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="210dp"
+            android:background="@drawable/location_content_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_location"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/baseline_location_on_24"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_place_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/sansbold"
+                    android:textStyle="bold"
+                    android:text="@string/place"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_place_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/sanssemi"
+                    android:text="@string/location"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
 
     </RelativeLayout>
 

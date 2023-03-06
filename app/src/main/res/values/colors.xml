@@ -10,4 +10,6 @@
     <color name="light_gray">#FFF1F1F1</color>
     <color name="gray">#FFB8B8B8</color>
     <color name="transparent">#00000000</color>
+    <color name="rating_glass">#4D212125</color>
+    <color name="location_glass">#99000000</color>
 </resources>

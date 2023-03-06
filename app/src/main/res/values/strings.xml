@@ -5,6 +5,9 @@
     <string name="category">Category</string>
     <string name="popular">Popular</string>
     <string name="alt">Place Image</string>
+    <string name="rating">rating</string>
+    <string name="place">place</string>
+    <string name="location">location</string>
 
     <string-array name="category_name">
         <item>Mountain</item>
@@ -15,29 +18,42 @@
     </string-array>
 
     <string-array name="place_name">
-        <item>Tokyo Tower</item>
-        <item>Machu Pichu</item>
-        <item>Rialto Bridge</item>
-        <item>Kelingking Beach</item>
-        <item>Yosemite Valley</item>
-        <item>Akropolis</item>
-        <item>Antelope Canyon</item>
-        <item>Bryggen</item>
-        <item>Louvre</item>
-        <item>Times Square</item>
+        <item>Tokyo Tower,</item>
+        <item>Machu Pichu,</item>
+        <item>Rialto Bridge,</item>
+        <item>Kelingking Beach,</item>
+        <item>Yosemite Park,</item>
+        <item>Akropolis,</item>
+        <item>Antelope Canyon,</item>
+        <item>Bryggen,</item>
+        <item>Louvre,</item>
+        <item>Times Square,</item>
     </string-array>
 
     <string-array name="place_location">
         <item>Tokyo</item>
         <item>Urubamba</item>
         <item>Venice</item>
-        <item>Nusa Penida</item>
+        <item>Bali</item>
         <item>California</item>
         <item>Athens</item>
         <item>Arizona</item>
         <item>Bergen</item>
         <item>Paris</item>
         <item>New York</item>
+    </string-array>
+
+    <string-array name="place_rating">
+        <item>4.7</item>
+        <item>4.3</item>
+        <item>4.7</item>
+        <item>4.6</item>
+        <item>4.8</item>
+        <item>4.5</item>
+        <item>4.6</item>
+        <item>4.7</item>
+        <item>4.7</item>
+        <item>4.7</item>
     </string-array>
 
 <!--    <string-array name="place_photo">-->
