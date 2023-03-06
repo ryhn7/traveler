@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
     private var listCategory = ArrayList<Category>()
     private var listPlace = ArrayList<Place>()
 
-    companion object{
+    companion object {
         const val EXTRA_PLACE = "extra_place"
     }
 
@@ -75,11 +75,20 @@ class MainActivity : AppCompatActivity() {
         val placeLocation = resources.getStringArray(R.array.place_location)
         val placePrice = resources.getStringArray(R.array.place_price)
         val placeDescription = resources.getStringArray(R.array.place_description)
+        val placeReview = resources.getStringArray(R.array.place_review)
 
         val lists = ArrayList<Place>()
 
         for (i in placeRating.indices) {
-            val place = Place(placeRating[i], placePhoto.getResourceId(i, -1), placeName[i], placeLocation[i], placePrice[i], placeDescription[i])
+            val place = Place(
+                placeRating[i],
+                placePhoto.getResourceId(i, -1),
+                placeName[i],
+                placeLocation[i],
+                placePrice[i],
+                placeDescription[i],
+                placeReview[i]
+            )
             lists.add(place)
         }
         return lists

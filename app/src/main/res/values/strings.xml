@@ -80,6 +80,19 @@
         <item>$20</item>
     </string-array>
 
+    <string-array name="place_review">
+        <item>(8568 Reviews)</item>
+        <item>(5589 Reviews)</item>
+        <item>(10.536 Reviews)</item>
+        <item>(7654 Reviews)</item>
+        <item>(15.423 Reviews)</item>
+        <item>(6398 Reviews)</item>
+        <item>(7254 Reviews)</item>
+        <item>(7534 Reviews)</item>
+        <item>(24.876 Reviews)</item>
+        <item>(10.276 Reviews)</item>
+    </string-array>
+
     <string-array name="place_description">
         <item>The Tokyo Tower is a communications and observation tower in the Shiba-koen district of Minato, Tokyo, Japan, built in 1958. At 332.9 meters (1,092 ft), it is the second-tallest structure in Japan. The structure is an Eiffel Tower-inspired lattice tower that is painted white and international orange to comply with air safety regulations.</item>
         <item>Machu Picchu is a 15th-century Inca citadel located in the Eastern Cordillera of southern Peru on a 2,430-meter (7,970 ft) mountain ridge. Often referred to as the "Lost City of the Incas", it is the most familiar icon of the Inca Empire. It is located in the Machupicchu District within Urubamba Province above the Sacred Valley, which is 80 kilometers (50 mi) northwest of Cusco.</item>

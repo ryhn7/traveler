@@ -11,4 +11,5 @@ data class Place(
     val location: String,
     val price: String,
     val description: String,
+    val review : String
 ) : Parcelable

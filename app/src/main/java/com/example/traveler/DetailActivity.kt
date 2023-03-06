@@ -1,5 +1,6 @@
 package com.example.traveler
 
+import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -31,6 +32,22 @@ class DetailActivity : AppCompatActivity() {
             binding.tvDetailRating.text = place.rating
             binding.tvDetailPriceValue.text = place.price
             binding.tvDetailPlaceLocation.text = place.description
+            binding.tvDetailReview.text = place.review
+        }
+
+//        on click back button, go back to main activity
+        binding.btnDetailBack.setOnClickListener {
+            finish()
+        }
+
+//        on click share button, share the place
+        binding.btnDetailActionShare.setOnClickListener {
+            val shareIntent = Intent().apply {
+                action = Intent.ACTION_SEND
+                putExtra(Intent.EXTRA_TEXT, "Hey, check out this place ${place?.name} in ${place?.location}")
+                type = "text/plain"
+            }
+            startActivity(shareIntent)
         }
 
     }
