@@ -19,6 +19,11 @@
     <string name="book">Book now</string>
     <string name="price">Price</string>
     <string name="price_value">$100</string>
+    <string name="about_name">Rayhan Illyas Annabil</string>
+    <string name="about">Rayhan Illyas Annabil</string>
+    <string name="about_email">minato205732@gmail.com</string>
+    <string name="about_button">Follow Rayhan</string>
+    <string name="about_quote">“Intelligence is a privilege, and it needs to be used for the greater good of people.” \n- Dr. Otto Octavius</string>
 
     <string-array name="category_name">
         <item>Mountain</item>
