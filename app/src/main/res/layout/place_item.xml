@@ -89,6 +89,8 @@
                     android:layout_marginTop="12dp"
                     android:fontFamily="@font/sansbold"
                     android:textStyle="bold"
+                    android:ellipsize="end"
+                    android:maxLines="1"
                     android:text="@string/place"
                     android:textSize="12sp" />
 
@@ -98,6 +100,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="1dp"
                     android:layout_marginTop="12dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
                     android:fontFamily="@font/sanssemi"
                     android:text="@string/location"
                     android:textSize="12sp" />
