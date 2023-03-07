@@ -24,6 +24,10 @@
     <string name="about_email">minato205732@gmail.com</string>
     <string name="about_button">Follow Rayhan</string>
     <string name="about_quote">“Intelligence is a privilege, and it needs to be used for the greater good of people.” \n- Dr. Otto Octavius</string>
+    <string name="home">home</string>
+    <string name="explore">explore</string>
+    <string name="fav">favourite</string>
+    <string name="settings">settings</string>
 
     <string-array name="category_name">
         <item>Mountain</item>
